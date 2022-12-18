@@ -1,21 +1,21 @@
 let a, b, operator;
 
-console.log(operate(5, 2, '+'));
+console.log(operate(7, 2, '*'));
 
 //functions for basic math operations
 function add(a, b) {
 	return a + b;
 }
 
-function subtract() {
+function subtract(a, b) {
 	return a - b;
 }
 
-function devide() {
+function devide(a, b) {
 	return a / b;
 }
 
-function multiply() {
+function multiply(a, b) {
 	return a * b;
 }
 
@@ -25,14 +25,14 @@ function operate(a, b, operator) {
 		case '+':
 			return add(a, b);
 
-		case '+':
-			return add(a, b);
+		case '-':
+			return subtract(a, b);
 
-		case '+':
-			return add(a, b);
+		case '/':
+			return devide(a, b);
 
-		case '+':
-			return add(a, b);
+		case '*':
+			return multiply(a, b);
 
 		default:
 			alert('Invalid operator, try again.');
